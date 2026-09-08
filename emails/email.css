@@ -37,7 +37,6 @@
     --radius-lg: 8px;
     --default-font-family: Inter, Arial, Helvetica, sans-serif;
     --default-mono-font-family: var(--font-mono);
-    --font-brand: Inter, Arial, Helvetica, sans-serif;
   }
 }
 @layer base {
@@ -414,6 +413,53 @@ body {
 .email-row-label-last, .email-row-value-last {
   border-bottom: 0;
 }
+.email-row-link-cell {
+  padding: 0;
+  border-bottom: 1px solid var(--border-default);
+}
+.email-row-link-cell-last {
+  border-bottom: 0;
+}
+.email-row-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.email-row-link:hover, .email-row-link:focus {
+  background-color: var(--surface-muted);
+}
+.email-row-label-inner {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--fg-tertiary);
+  padding: 10px 0;
+}
+.email-row-value-inner {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--fg-primary);
+  padding: 10px 0;
+}
+.email-sku-row-link-cell {
+  padding: 0;
+  border-bottom: 1px solid var(--border-default);
+}
+.email-sku-row-link-cell-last {
+  border-bottom: 0;
+}
+.email-sku-row-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.email-sku-row-link:hover, .email-sku-row-link:focus {
+  background-color: var(--surface-muted);
+}
+.email-td-inner {
+  padding: 14px 12px;
+  vertical-align: middle;
+}
 .email-sku-heading {
   font-family: var(--font-sans);
   font-size: 18px;
@@ -487,7 +533,7 @@ body {
 .email-gap-value {
   font-family: var(--font-sans);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--feedback-danger);
   white-space: nowrap;
 }
