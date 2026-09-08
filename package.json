@@ -4,7 +4,7 @@
   "description": "CommerceIQ daily update HTML email templates",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./styles/email.css -o ./emails/email.css",
+    "build": "tailwindcss -i ./styles/email.css -o ./emails/email.css && cp emails/daily-update.html emails/index.html",
     "watch": "tailwindcss -i ./styles/email.css -o ./emails/email.css --watch",
     "preview": "npm run build && open emails/daily-update.html"
   },

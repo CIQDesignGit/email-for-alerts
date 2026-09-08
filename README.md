@@ -61,9 +61,14 @@ Most ESPs strip external stylesheets and do not support CSS variables. For produ
 4. Replace sample numbers / SKUs with live API data
 5. Update preference / unsubscribe links in the footer
 
-## Install
+## Deploy on Vercel
+
+This project is a static site — Vercel serves the `emails/` folder after `npm run build`.
+
+- **Output directory:** `emails` (configured in `vercel.json`)
+- **Root URL:** rewrites to `daily-update.html`
+- Push to `main` to redeploy
 
 ```bash
-npm install
-npm install @ciq-dev/ciq-design-system
+npm run build   # compiles CSS + copies index.html into emails/
 ```

@@ -188,6 +188,9 @@
   }
 }
 @layer utilities {
+  .static {
+    position: static;
+  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
