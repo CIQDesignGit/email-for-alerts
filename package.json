@@ -1,0 +1,21 @@
+{
+  "name": "ciq-email-alerts",
+  "version": "1.0.0",
+  "description": "CommerceIQ daily update HTML email templates",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./styles/email.css -o ./emails/email.css",
+    "watch": "tailwindcss -i ./styles/email.css -o ./emails/email.css --watch",
+    "preview": "npm run build && open emails/daily-update.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ciq-dev/ciq-design-system": "^0.1.1-develop.19"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

@@ -1,0 +1,185 @@
+/**
+ * CIQ Design System tokens for email (Tailwind v4 + CSS variables)
+ * Source of truth: @ciq-dev/ciq-design-system (theme.css :root + @theme)
+ *
+ * Use DS semantic names everywhere — never invent --email-* aliases.
+ * Tailwind maps via @theme → utilities like text-fg-brand, bg-action-primary.
+ *
+ * React apps:
+ *   import "@ciq-dev/ciq-design-system/styles";
+ *   import { Button, Badge } from "@ciq-dev/ciq-design-system";
+ *   <Button variant="default">…</Button>
+ *   <Badge variant="defaultLight">…</Badge>
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@source "../emails";
+
+@theme inline {
+  --font-sans: Inter, Arial, Helvetica, sans-serif;
+  --font-brand: Inter, Arial, Helvetica, sans-serif;
+
+  /* Tier 1 — CIQ primitives */
+  --color-brand: var(--brand);
+  --color-brand-50: var(--color-purple-50);
+  --color-brand-100: var(--color-purple-100);
+  --color-brand-200: var(--color-purple-200);
+  --color-brand-300: var(--color-purple-300);
+  --color-brand-400: var(--color-purple-400);
+  --color-brand-500: var(--color-purple-500);
+  --color-brand-600: var(--color-purple-600);
+  --color-brand-700: var(--color-purple-700);
+  --color-brand-800: var(--color-purple-800);
+  --color-brand-900: var(--color-purple-900);
+  --color-brand-950: var(--color-purple-950);
+  --color-primary-dark: var(--primary-dark);
+
+  /* Tier 2 — foreground */
+  --color-fg-primary: var(--fg-primary);
+  --color-fg-secondary: var(--fg-secondary);
+  --color-fg-tertiary: var(--fg-tertiary);
+  --color-fg-disabled: var(--fg-disabled);
+  --color-fg-inverse: var(--fg-inverse);
+  --color-fg-brand: var(--fg-brand);
+
+  /* Tier 2 — surfaces */
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-surface-subtle: var(--surface-subtle);
+  --color-surface-muted: var(--surface-muted);
+
+  /* Tier 2 — borders */
+  --color-border-default: var(--border-default);
+  --color-border-strong: var(--border-strong);
+  --color-border-focus: var(--border-focus);
+
+  /* Tier 2 — action */
+  --color-action-primary: var(--action-primary);
+  --color-action-primary-hover: var(--action-primary-hover);
+  --color-action-primary-disabled: var(--action-primary-disabled);
+  --color-action-primary-fg: var(--action-primary-fg);
+  --color-action-secondary: var(--action-secondary);
+  --color-action-secondary-fg: var(--action-secondary-fg);
+  --color-action-danger: var(--action-danger);
+  --color-action-danger-fg: var(--action-danger-fg);
+
+  /* Tier 2 — feedback */
+  --color-feedback-success: var(--feedback-success);
+  --color-feedback-warning: var(--feedback-warning);
+  --color-feedback-warning-subtle: var(--feedback-warning-subtle);
+  --color-feedback-danger: var(--feedback-danger);
+
+  /* Legacy shadcn aliases (Button/Badge use these) */
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+}
+
+/* Same :root contract as @ciq-dev/ciq-design-system */
+:root {
+  --brand: var(--color-purple-600);
+  --brand-hover: var(--color-purple-700);
+  --brand-disabled: var(--color-purple-200);
+  --brand-dark: var(--color-purple-950);
+  --primary-dark: var(--color-slate-950);
+
+  --fg-primary: var(--color-slate-900);
+  --fg-secondary: var(--color-slate-700);
+  --fg-tertiary: var(--color-slate-500);
+  --fg-disabled: var(--color-slate-300);
+  --fg-inverse: var(--color-white);
+  --fg-brand: var(--color-purple-950);
+
+  --canvas: var(--color-white);
+  --surface: var(--color-white);
+  --surface-subtle: var(--color-slate-100);
+  --surface-muted: var(--color-slate-50);
+
+  --border-default: var(--color-slate-200);
+  --border-strong: var(--color-slate-300);
+  --border-focus: var(--color-purple-400);
+
+  --action-primary: var(--color-purple-600);
+  --action-primary-hover: var(--color-purple-700);
+  --action-primary-disabled: var(--color-purple-200);
+  --action-primary-fg: var(--color-white);
+  --action-secondary: var(--color-slate-700);
+  --action-secondary-fg: var(--color-white);
+  --action-danger: var(--color-red-600);
+  --action-danger-fg: var(--color-white);
+
+  --feedback-success: var(--color-green-600);
+  --feedback-warning: var(--color-amber-600);
+  --feedback-warning-subtle: var(--color-amber-50);
+  --feedback-danger: var(--color-red-600);
+
+  --primary: var(--action-primary);
+  --primary-foreground: var(--action-primary-fg);
+  --destructive: var(--action-danger);
+  --destructive-foreground: var(--action-danger-fg);
+  --muted: var(--surface-subtle);
+  --muted-foreground: var(--fg-tertiary);
+  --card: var(--surface);
+  --border: var(--border-default);
+  --ring: var(--border-focus);
+  --background: var(--canvas);
+  --foreground: var(--fg-primary);
+
+  --font-sans: Inter, Arial, Helvetica, sans-serif;
+  --font-brand: var(--font-sans);
+  --radius: 6px;
+}
+
+/* DS type roles (from theme.css @utility) */
+@utility type-heading {
+  @apply font-sans text-2xl font-semibold leading-tight tracking-tight;
+}
+
+@utility type-title {
+  @apply font-sans text-lg font-semibold leading-snug;
+}
+
+@utility type-body {
+  @apply font-sans text-sm font-normal leading-normal;
+}
+
+@utility type-body-strong {
+  @apply font-sans text-sm font-medium leading-normal;
+}
+
+@utility type-label {
+  @apply font-sans text-sm font-medium leading-none;
+}
+
+@utility type-caption {
+  @apply font-sans text-xs font-normal leading-normal;
+}
+
+@utility type-caption-strong {
+  @apply font-sans text-xs font-medium leading-normal;
+}
+
+/*
+  Component mapping (matches DS Button / Badge)
+  ---------------------------------------------
+  Button variant=default  → bg-primary text-primary-foreground rounded-lg
+  Badge variant=defaultLight → border-violet-100 bg-violet-50 text-primary rounded-lg
+  Metric / page title     → text-fg-brand
+  Body / rows             → text-fg-primary | text-fg-secondary
+  Captions / meta         → text-fg-tertiary | text-muted-foreground
+  Borders                 → border-border-default
+  Gap values              → text-feedback-danger
+*/

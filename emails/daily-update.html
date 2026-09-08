@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="x-apple-disable-message-reformatting" />
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+  <title>CommerceIQ · Daily Update</title>
+  <!--
+    CIQ Design System (@ciq-dev/ciq-design-system)
+    Preview uses Tailwind + CSS variables from tokens/ciq-email-tokens.css.
+    Component mirrors:
+      Button variant=default  → .email-cta (bg-action-primary)
+      Badge variant=defaultLight → .email-badge (violet-50 / text-primary)
+    Build CSS: npm run build
+  -->
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+  <link rel="stylesheet" href="email.css" />
+</head>
+<body class="bg-canvas font-sans text-fg-primary">
+  <div class="email-preheader">
+    42 open issues · $2.1M cumulative OPS at risk — Sales Agent · CleanPro · Amazon US
+  </div>
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="bg-canvas w-full">
+    <tr>
+      <td align="center" class="px-4 py-8">
+
+        <table role="presentation" class="email-shell bg-surface" width="840" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="p-0">
+
+              <!-- ========== 1. HEADER ========== -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="mb-7">
+                <tr>
+                  <td colspan="2" class="email-eyebrow">
+                    CommerceIQ · Daily Update
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="bottom" class="email-title">
+                    Sales Agent
+                  </td>
+                  <td valign="bottom" align="right" class="email-meta">
+                    Detected through Sep 7, 11:00 UTC
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="email-divider">&nbsp;</td>
+                </tr>
+              </table>
+
+              <!-- ========== 2. SUMMARY METRICS ========== -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="mb-8">
+                <tr>
+                  <td class="metric-cell stack-col metric-cell-left" width="50%" valign="top">
+                    <div class="email-metric-value">42</div>
+                    <div class="email-metric-label">Open issues</div>
+                    <div class="email-metric-hint">12 new SKUs not flagged yesterday</div>
+                  </td>
+                  <td class="metric-cell stack-col metric-cell-right" width="50%" valign="top">
+                    <div class="email-metric-value">$2.1M</div>
+                    <div class="email-metric-label">Cumulative OPS for SKUs at risk</div>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ========== 3. BREAKDOWN ========== -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="mb-9">
+                <tr>
+                  <td class="breakdown-col stack-col breakdown-left" width="50%" valign="top">
+                    <div class="email-section-title">By issue type</div>
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td class="email-col-label">Type</td>
+                        <td align="right" class="email-col-label">SKUs</td>
+                      </tr>
+                      <tr>
+                        <td class="email-row-label">Lost buy box</td>
+                        <td align="right" class="email-row-value">6</td>
+                      </tr>
+                      <tr>
+                        <td class="email-row-label">Missing promo badge</td>
+                        <td align="right" class="email-row-value">5</td>
+                      </tr>
+                      <tr>
+                        <td class="email-row-label">Deal page visibility</td>
+                        <td align="right" class="email-row-value">8</td>
+                      </tr>
+                      <tr>
+                        <td class="email-row-label email-row-label-last">Out of stock</td>
+                        <td align="right" class="email-row-value email-row-value-last">5</td>
+                      </tr>
+                    </table>
+                  </td>
+
+                  <td class="breakdown-col stack-col breakdown-right" width="50%" valign="top">
+                    <div class="email-section-title">By category</div>
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td class="email-col-label">Category</td>
+                        <td align="right" class="email-col-label">SKUs</td>
+                      </tr>
+                      <tr>
+                        <td class="email-row-label">Floor care</td>
+                        <td align="right" class="email-row-value">9</td>
+                      </tr>
+                      <tr>
+                        <td class="email-row-label">Floor care robotics</td>
+                        <td align="right" class="email-row-value">7</td>
+                      </tr>
+                      <tr>
+                        <td class="email-row-label">Kitchen appliances</td>
+                        <td align="right" class="email-row-value">6</td>
+                      </tr>
+                      <tr>
+                        <td class="email-row-label email-row-label-last">Controllers</td>
+                        <td align="right" class="email-row-value email-row-value-last">4</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ========== 4. TOP 5 IMPACTED SKUs ========== -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="mb-2">
+                <tr>
+                  <td class="email-sku-heading">Top 5 impacted SKUs</td>
+                </tr>
+                <tr>
+                  <td class="email-sku-sub">Sorted by negative projected gap to plan</td>
+                </tr>
+              </table>
+
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="email-table-card">
+                <tr>
+                  <td class="email-th">Product</td>
+                  <td class="email-th sku-hide-mobile">Issues</td>
+                  <td align="right" class="email-th">Projected EOW gap to plan</td>
+                </tr>
+
+                <!-- Row 1 -->
+                <tr>
+                  <td class="email-td">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td valign="middle" class="pr-2.5">
+                          <img src="images/sku-1-pro-upright.png" width="40" height="40" alt="CleanPro Pro Upright" class="email-product-img" />
+                        </td>
+                        <td valign="middle">
+                          <div class="email-product-name">CleanPro Pro Upright</div>
+                          <div class="email-product-id">9ABC · B09ABC5678</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="email-td sku-hide-mobile">
+                    <span class="email-badge">Media spend</span>
+                    <span class="email-badge">Stock OOS</span>
+                  </td>
+                  <td align="right" class="email-td">
+                    <div class="email-gap-value">
+                      −$44.3K<span class="email-gap-pct">−75.4%</span>
+                    </div>
+                    <div class="email-gap-hint">vs. plan</div>
+                  </td>
+                </tr>
+
+                <!-- Row 2 -->
+                <tr>
+                  <td class="email-td">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td valign="middle" class="pr-2.5">
+                          <img src="images/sku-2-duo-cordless.png" width="40" height="40" alt="CleanPro Duo Cordless" class="email-product-img" />
+                        </td>
+                        <td valign="middle">
+                          <div class="email-product-name">CleanPro Duo Cordless</div>
+                          <div class="email-product-id">8XYZ · B08XYZ1234</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="email-td sku-hide-mobile">
+                    <span class="email-badge">Lost buy box</span>
+                  </td>
+                  <td align="right" class="email-td">
+                    <div class="email-gap-value">
+                      −$38.1K<span class="email-gap-pct">−68.2%</span>
+                    </div>
+                    <div class="email-gap-hint">vs. plan</div>
+                  </td>
+                </tr>
+
+                <!-- Row 3 -->
+                <tr>
+                  <td class="email-td">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td valign="middle" class="pr-2.5">
+                          <img src="images/sku-3-ultra-stick.png" width="40" height="40" alt="CleanPro Ultra Stick" class="email-product-img" />
+                        </td>
+                        <td valign="middle">
+                          <div class="email-product-name">CleanPro Ultra Stick</div>
+                          <div class="email-product-id">7DEF · B07DEF9012</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="email-td sku-hide-mobile">
+                    <span class="email-badge">Deal page visibility</span>
+                    <span class="email-badge">Missing promo badge</span>
+                  </td>
+                  <td align="right" class="email-td">
+                    <div class="email-gap-value">
+                      −$29.6K<span class="email-gap-pct">−54.1%</span>
+                    </div>
+                    <div class="email-gap-hint">vs. plan</div>
+                  </td>
+                </tr>
+
+                <!-- Row 4 -->
+                <tr>
+                  <td class="email-td">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td valign="middle" class="pr-2.5">
+                          <img src="images/sku-4-robomax.png" width="40" height="40" alt="CleanPro RoboMax" class="email-product-img" />
+                        </td>
+                        <td valign="middle">
+                          <div class="email-product-name">CleanPro RoboMax</div>
+                          <div class="email-product-id">6GHI · B06GHI3456</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="email-td sku-hide-mobile">
+                    <span class="email-badge">Out of stock</span>
+                  </td>
+                  <td align="right" class="email-td">
+                    <div class="email-gap-value">
+                      −$22.4K<span class="email-gap-pct">−41.8%</span>
+                    </div>
+                    <div class="email-gap-hint">vs. plan</div>
+                  </td>
+                </tr>
+
+                <!-- Row 5 -->
+                <tr>
+                  <td class="email-td email-td-last">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td valign="middle" class="pr-2.5">
+                          <img src="images/sku-5-compact.png" width="40" height="40" alt="CleanPro Compact" class="email-product-img" />
+                        </td>
+                        <td valign="middle">
+                          <div class="email-product-name">CleanPro Compact</div>
+                          <div class="email-product-id">5JKL · B05JKL7890</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="email-td email-td-last sku-hide-mobile">
+                    <span class="email-badge">Media spend</span>
+                    <span class="email-badge">Lost buy box</span>
+                  </td>
+                  <td align="right" class="email-td email-td-last">
+                    <div class="email-gap-value">
+                      −$18.7K<span class="email-gap-pct">−33.5%</span>
+                    </div>
+                    <div class="email-gap-hint">vs. plan</div>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ========== 5. CTA — Button variant=default (action-primary) ========== -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="mt-7">
+                <tr>
+                  <td align="center">
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://app.commerceiq.ai/issues" style="height:44px;v-text-anchor:middle;width:220px;" arcsize="18%" stroke="f" fillcolor="#9333EA">
+                      <w:anchorlock/>
+                      <center style="color:#FFFFFF;font-family:Inter,Arial,sans-serif;font-size:14px;font-weight:600;">View all issues</center>
+                    </v:roundrect>
+                    <![endif]-->
+                    <!--[if !mso]><!-- -->
+                    <a class="email-cta" href="https://app.commerceiq.ai/issues" target="_blank" style="mso-hide:all;">
+                      View all issues
+                    </a>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+
+        <table role="presentation" width="840" class="email-shell mt-6" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td align="center" class="email-footer">
+              You get this because you own CleanPro on Amazon US in Sales Agent. Issues below $2,000 of daily OPS aren’t included.
+              <br /><br />
+              CommerceIQ, 555 Bryant St, Palo Alto, CA 94301
+              ·
+              <a href="#">Change what you get</a>
+              ·
+              <a href="#">Unsubscribe</a>
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

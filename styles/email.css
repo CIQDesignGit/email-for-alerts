@@ -1,0 +1,350 @@
+/**
+ * Email layout + DS component mirrors
+ * Tokens: ../tokens/ciq-email-tokens.css (@ciq-dev/ciq-design-system)
+ */
+
+@import "../tokens/ciq-email-tokens.css";
+
+/* Email client resets */
+body,
+table,
+td,
+a {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+table,
+td {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+  border-collapse: collapse;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  background-color: var(--canvas);
+  font-family: var(--font-sans);
+  color: var(--fg-primary);
+}
+
+.email-preheader {
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  mso-hide: all;
+  font-size: 1px;
+  line-height: 1px;
+  color: var(--fg-inverse);
+}
+
+.email-shell {
+  width: 840px;
+  max-width: 840px;
+}
+
+/* Eyebrow — brand accent label */
+.email-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand);
+  padding-bottom: 12px;
+}
+
+/* Page title — Sales Agent */
+.email-title {
+  font-family: var(--font-sans);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--fg-brand);
+  padding-bottom: 16px;
+}
+
+.email-meta {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--fg-tertiary);
+  padding-bottom: 20px;
+  white-space: nowrap;
+}
+
+.email-divider {
+  border-bottom: 1px solid var(--border-default);
+  font-size: 0;
+  line-height: 0;
+}
+
+.email-metric-value {
+  font-family: var(--font-sans);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--fg-brand);
+}
+
+.email-metric-label {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--fg-tertiary);
+  padding-top: 6px;
+}
+
+.email-metric-hint {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--fg-tertiary);
+  padding-top: 4px;
+}
+
+.email-section-title {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--fg-primary);
+  padding-bottom: 12px;
+}
+
+.email-col-label {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--fg-tertiary);
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-default);
+}
+
+.email-row-label {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--fg-tertiary);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-default);
+}
+
+.email-row-value {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--fg-primary);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-default);
+}
+
+.email-row-label-last,
+.email-row-value-last {
+  border-bottom: 0;
+}
+
+.email-sku-heading {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--fg-primary);
+  padding-bottom: 4px;
+}
+
+.email-sku-sub {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--fg-tertiary);
+  padding-bottom: 14px;
+}
+
+.email-table-card {
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg, 8px);
+  overflow: hidden;
+}
+
+.email-th {
+  padding: 10px 12px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--fg-tertiary);
+  border-bottom: 1px solid var(--border-default);
+  background-color: var(--surface-muted);
+}
+
+.email-td {
+  padding: 14px 12px;
+  border-bottom: 1px solid var(--border-default);
+  vertical-align: middle;
+}
+
+.email-td-last {
+  border-bottom: 0;
+}
+
+.email-product-name {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--fg-primary);
+  line-height: 1.3;
+}
+
+.email-product-id {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  color: var(--fg-tertiary);
+  padding-top: 2px;
+}
+
+.email-product-img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius);
+  object-fit: cover;
+  border: 0;
+}
+
+/* Badge variant=defaultLight */
+.email-badge {
+  display: inline-block;
+  margin: 0 4px 4px 0;
+  padding: 3px 8px;
+  border-radius: var(--radius-lg, 8px);
+  border: 1px solid var(--color-violet-100);
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  background-color: var(--color-violet-50);
+  color: var(--primary);
+}
+
+.email-gap-value {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--feedback-danger);
+  white-space: nowrap;
+}
+
+.email-gap-pct {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--fg-tertiary);
+  padding-left: 6px;
+}
+
+.email-gap-hint {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  color: var(--fg-tertiary);
+  padding-top: 2px;
+}
+
+/* Button variant=default */
+.email-cta {
+  display: inline-block;
+  background-color: var(--action-primary);
+  color: var(--action-primary-fg);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: var(--radius-lg, 8px);
+  padding: 0 32px;
+}
+
+.email-footer {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--fg-tertiary);
+  padding: 0 12px;
+}
+
+.email-footer a {
+  color: var(--brand);
+  text-decoration: underline;
+}
+
+.metric-cell-left {
+  width: 50%;
+  padding-right: 24px;
+  border-right: 1px solid var(--border-default);
+}
+
+.metric-cell-right {
+  width: 50%;
+  padding-left: 24px;
+}
+
+.breakdown-left {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.breakdown-right {
+  width: 50%;
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 860px) {
+  .email-shell {
+    width: 100% !important;
+  }
+
+  .stack-col {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .metric-cell {
+    display: block !important;
+    width: 100% !important;
+    border-right: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    padding-bottom: 20px !important;
+  }
+
+  .breakdown-col {
+    display: block !important;
+    width: 100% !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    padding-bottom: 24px !important;
+  }
+
+  .sku-hide-mobile {
+    display: none !important;
+  }
+
+  .email-cta {
+    width: 100% !important;
+  }
+}
